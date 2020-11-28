@@ -4,6 +4,6 @@ FactoryBot.define do
     email { Faker::Internet.email }
     password { "123321" }
     password_confirmation { "123321" }
-    profile { %i(admin client).sample }
+    profile { :admin }
   end
 end
